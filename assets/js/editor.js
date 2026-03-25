@@ -6,23 +6,23 @@ const blockManager = editor.BlockManager;
 
 // DaisyUI Button
 blockManager.add('daisy-button', {
-    label: 'Primary Button',
-    category: 'DaisyUI Elements',
-    content: '<button class="btn btn-primary">Click Me</button>',
+  label: 'Primary Button',
+  category: 'DaisyUI Elements',
+  content: '<a href="#" class="btn btn-primary">Click Me</a>',
 });
 
 // DaisyUI Card
 blockManager.add('daisy-card', {
-    label: 'Card',
-    category: 'DaisyUI Elements',
-    content: `
-    <div class="card w-100 bg-base-100 shadow-xl">
+  label: 'Card',
+  category: 'DaisyUI Elements',
+  content: `
+    <div class="card w-100 bg-base-100 shadow-xl py-4">
       <figure><img src="https://placehold.co/400x225" alt="Shoes" /></figure>
       <div class="card-body">
         <h2 class="card-title">Card title!</h2>
         <p>If a dog chews shoes whose shoes does he choose?</p>
         <div class="card-actions justify-end">
-          <button class="btn btn-primary">Buy Now</button>
+          <a href="#" class="btn btn-primary">Buy Now</a>
         </div>
       </div>
     </div>
@@ -31,15 +31,15 @@ blockManager.add('daisy-card', {
 
 // DaisyUI Hero Section
 blockManager.add('daisy-hero', {
-    label: 'Hero Section',
-    category: 'DaisyUI Layouts',
-    content: `
-    <div class="hero min-h-screen bg-base-200">
+  label: 'Hero Section',
+  category: 'DaisyUI Layouts',
+  content: `
+    <div class="hero min-h-screen bg-base-200 py-4">
       <div class="hero-content text-center">
         <div class="max-w-md">
           <h1 class="text-5xl font-bold">Hello there</h1>
           <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-          <button class="btn btn-primary">Get Started</button>
+          <a href="#" class="btn btn-primary">Get Started</a>
         </div>
       </div>
     </div>
@@ -52,31 +52,31 @@ blockManager.add('daisy-hero', {
 
 // Container
 blockManager.add('container', {
-    label: 'Container',
-    category: 'Containers & Layout',
-    content: `<div class="container mx-auto px-4 py-4" data-gjs-droppable="true"></div>`,
+  label: 'Container',
+  category: 'Containers & Layout',
+  content: `<div class="container mx-auto px-4 py-4" data-gjs-droppable="true"></div>`,
 });
 
 // Section
 blockManager.add('section', {
-    label: 'Section',
-    category: 'Containers & Layout',
-    content: `<section class="py-12 px-4" data-gjs-droppable="true"></section>`,
+  label: 'Section',
+  category: 'Containers & Layout',
+  content: `<section class="py-12 px-4" data-gjs-droppable="true"></section>`,
 });
 
 // Grid Container
 blockManager.add('grid-container', {
-    label: 'Grid Container',
-    category: 'Containers & Layout',
-    content: `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" data-gjs-droppable="true"></div>`,
+  label: 'Grid Container',
+  category: 'Containers & Layout',
+  content: `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-4" data-gjs-droppable="true"></div>`,
 });
 
 // 2 Column Layout
 blockManager.add('columns-2', {
-    label: '2 Columns',
-    category: 'Containers & Layout',
-    content: `
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+  label: '2 Columns',
+  category: 'Containers & Layout',
+  content: `
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-4">
       <div data-gjs-droppable="true" class="p-4"></div>
       <div data-gjs-droppable="true" class="p-4"></div>
     </div>`,
@@ -84,10 +84,10 @@ blockManager.add('columns-2', {
 
 // 3 Column Layout
 blockManager.add('columns-3', {
-    label: '3 Columns',
-    category: 'Containers & Layout',
-    content: `
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+  label: '3 Columns',
+  category: 'Containers & Layout',
+  content: `
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
       <div data-gjs-droppable="true" class="p-4"></div>
       <div data-gjs-droppable="true" class="p-4"></div>
       <div data-gjs-droppable="true" class="p-4"></div>
@@ -96,10 +96,10 @@ blockManager.add('columns-3', {
 
 // 4 Column Layout
 blockManager.add('columns-4', {
-    label: '4 Columns',
-    category: 'Containers & Layout',
-    content: `
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+  label: '4 Columns',
+  category: 'Containers & Layout',
+  content: `
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-4">
       <div data-gjs-droppable="true" class="p-4"></div>
       <div data-gjs-droppable="true" class="p-4"></div>
       <div data-gjs-droppable="true" class="p-4"></div>
@@ -109,16 +109,16 @@ blockManager.add('columns-4', {
 
 // Flex Row
 blockManager.add('flex-row', {
-    label: 'Flex Row',
-    category: 'Containers & Layout',
-    content: `<div class="flex flex-row gap-4" data-gjs-droppable="true"></div>`,
+  label: 'Flex Row',
+  category: 'Containers & Layout',
+  content: `<div class="flex flex-row gap-4 py-4" data-gjs-droppable="true"></div>`,
 });
 
 // Flex Column
 blockManager.add('flex-col', {
-    label: 'Flex Column',
-    category: 'Containers & Layout',
-    content: `<div class="flex flex-col gap-4" data-gjs-droppable="true"></div>`,
+  label: 'Flex Column',
+  category: 'Containers & Layout',
+  content: `<div class="flex flex-col gap-4 py-4" data-gjs-droppable="true"></div>`,
 });
 
 // ============================================
@@ -127,76 +127,76 @@ blockManager.add('flex-col', {
 
 // Button Secondary
 blockManager.add('daisy-button-secondary', {
-    label: 'Secondary Button',
-    category: 'Basic Elements',
-    content: '<button class="btn btn-secondary">Secondary</button>',
+  label: 'Secondary Button',
+  category: 'Basic Elements',
+  content: '<a href="#" class="btn btn-secondary">Secondary</a>',
 });
 
 // Button Accent
 blockManager.add('daisy-button-accent', {
-    label: 'Accent Button',
-    category: 'Basic Elements',
-    content: '<button class="btn btn-accent">Accent</button>',
+  label: 'Accent Button',
+  category: 'Basic Elements',
+  content: '<a href="#" class="btn btn-accent">Accent</a>',
 });
 
 // Button Ghost
 blockManager.add('daisy-button-ghost', {
-    label: 'Ghost Button',
-    category: 'Basic Elements',
-    content: '<button class="btn btn-ghost">Ghost</button>',
+  label: 'Ghost Button',
+  category: 'Basic Elements',
+  content: '<a href="#" class="btn btn-ghost">Ghost</a>',
 });
 
 // Button Link
 blockManager.add('daisy-button-link', {
-    label: 'Link Button',
-    category: 'Basic Elements',
-    content: '<button class="btn btn-link">Link</button>',
+  label: 'Link Button',
+  category: 'Basic Elements',
+  content: '<a href="#" class="btn btn-link">Link</a>',
 });
 
 // Button Sizes
 blockManager.add('daisy-button-lg', {
-    label: 'Large Button',
-    category: 'Basic Elements',
-    content: '<button class="btn btn-lg btn-primary">Large</button>',
+  label: 'Large Button',
+  category: 'Basic Elements',
+  content: '<a href="#" class="btn btn-lg btn-primary">Large</a>',
 });
 
 blockManager.add('daisy-button-sm', {
-    label: 'Small Button',
-    category: 'Basic Elements',
-    content: '<button class="btn btn-sm btn-primary">Small</button>',
+  label: 'Small Button',
+  category: 'Basic Elements',
+  content: '<a href="#" class="btn btn-sm btn-primary">Small</a>',
 });
 
 // Button Group
 blockManager.add('daisy-button-group', {
-    label: 'Button Group',
-    category: 'Basic Elements',
-    content: `
-    <div class="join">
-      <button class="btn join-item">Button</button>
-      <button class="btn join-item">Button</button>
-      <button class="btn join-item">Button</button>
+  label: 'Button Group',
+  category: 'Basic Elements',
+  content: `
+    <div class="join py-4">
+      <a href="#" class="btn join-item">Button</a>
+      <a href="#" class="btn join-item">Button</a>
+      <a href="#" class="btn join-item">Button</a>
     </div>`,
 });
 
 // Badge
 blockManager.add('daisy-badge', {
-    label: 'Badge',
-    category: 'Basic Elements',
-    content: '<span class="badge badge-primary">Primary</span>',
+  label: 'Badge',
+  category: 'Basic Elements',
+  content: '<span class="badge badge-primary">Primary</span>',
 });
 
 blockManager.add('daisy-badge-outline', {
-    label: 'Outline Badge',
-    category: 'Basic Elements',
-    content: '<span class="badge badge-primary badge-outline">Outline</span>',
+  label: 'Outline Badge',
+  category: 'Basic Elements',
+  content: '<span class="badge badge-primary badge-outline">Outline</span>',
 });
 
 // Avatar
 blockManager.add('daisy-avatar', {
-    label: 'Avatar',
-    category: 'Basic Elements',
-    content: `
-    <div class="avatar">
+  label: 'Avatar',
+  category: 'Basic Elements',
+  content: `
+    <div class="avatar py-4">
       <div class="w-24 rounded">
         <img src="https://placehold.co/100x100" />
       </div>
@@ -204,10 +204,10 @@ blockManager.add('daisy-avatar', {
 });
 
 blockManager.add('daisy-avatar-group', {
-    label: 'Avatar Group',
-    category: 'Basic Elements',
-    content: `
-    <div class="avatar-group -space-x-6">
+  label: 'Avatar Group',
+  category: 'Basic Elements',
+  content: `
+    <div class="avatar-group -space-x-6 py-4">
       <div class="avatar">
         <div class="w-12"><img src="https://placehold.co/50x50" /></div>
       </div>
@@ -222,22 +222,22 @@ blockManager.add('daisy-avatar-group', {
 
 // Divider
 blockManager.add('daisy-divider', {
-    label: 'Divider',
-    category: 'Basic Elements',
-    content: '<div class="divider"></div>',
+  label: 'Divider',
+  category: 'Basic Elements',
+  content: '<div class="divider py-4"></div>',
 });
 
 blockManager.add('daisy-divider-text', {
-    label: 'Divider with Text',
-    category: 'Basic Elements',
-    content: '<div class="divider">OR</div>',
+  label: 'Divider with Text',
+  category: 'Basic Elements',
+  content: '<div class="divider py-4">OR</div>',
 });
 
 // Link
 blockManager.add('daisy-link', {
-    label: 'Link',
-    category: 'Basic Elements',
-    content: '<a class="link link-primary">Primary Link</a>',
+  label: 'Link',
+  category: 'Basic Elements',
+  content: '<a href="#" class="link link-primary">Primary Link</a>',
 });
 
 // ============================================
@@ -246,30 +246,30 @@ blockManager.add('daisy-link', {
 
 // Alert
 blockManager.add('daisy-alert', {
-    label: 'Alert Info',
-    category: 'Data Display',
-    content: `
-    <div role="alert" class="alert alert-info">
+  label: 'Alert Info',
+  category: 'Data Display',
+  content: `
+    <div role="alert" class="alert alert-info py-4">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
       <span>New software update available.</span>
     </div>`,
 });
 
 blockManager.add('daisy-alert-success', {
-    label: 'Alert Success',
-    category: 'Data Display',
-    content: `
-    <div role="alert" class="alert alert-success">
+  label: 'Alert Success',
+  category: 'Data Display',
+  content: `
+    <div role="alert" class="alert alert-success py-4">
       <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
       <span>Your purchase has been confirmed!</span>
     </div>`,
 });
 
 blockManager.add('daisy-alert-error', {
-    label: 'Alert Error',
-    category: 'Data Display',
-    content: `
-    <div role="alert" class="alert alert-error">
+  label: 'Alert Error',
+  category: 'Data Display',
+  content: `
+    <div role="alert" class="alert alert-error py-4">
       <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
       <span>Error! Task failed successfully.</span>
     </div>`,
@@ -277,10 +277,10 @@ blockManager.add('daisy-alert-error', {
 
 // Stats
 blockManager.add('daisy-stat', {
-    label: 'Stat',
-    category: 'Data Display',
-    content: `
-    <div class="stats shadow">
+  label: 'Stat',
+  category: 'Data Display',
+  content: `
+    <div class="stats shadow py-4">
       <div class="stat">
         <div class="stat-title">Total Page Views</div>
         <div class="stat-value">89,400</div>
@@ -290,10 +290,10 @@ blockManager.add('daisy-stat', {
 });
 
 blockManager.add('daisy-stats-group', {
-    label: 'Stats Group',
-    category: 'Data Display',
-    content: `
-    <div class="stats shadow">
+  label: 'Stats Group',
+  category: 'Data Display',
+  content: `
+    <div class="stats shadow py-4">
       <div class="stat">
         <div class="stat-figure text-primary">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
@@ -315,17 +315,17 @@ blockManager.add('daisy-stats-group', {
 
 // Progress
 blockManager.add('daisy-progress', {
-    label: 'Progress',
-    category: 'Data Display',
-    content: '<progress class="progress progress-primary w-56" value="70" max="100"></progress>',
+  label: 'Progress',
+  category: 'Data Display',
+  content: '<progress class="progress progress-primary w-56" value="70" max="100"></progress>',
 });
 
 // Table
 blockManager.add('daisy-table', {
-    label: 'Table',
-    category: 'Data Display',
-    content: `
-    <div class="overflow-x-auto">
+  label: 'Table',
+  category: 'Data Display',
+  content: `
+    <div class="overflow-x-auto py-4">
       <table class="table">
         <thead>
           <tr>
@@ -352,13 +352,13 @@ blockManager.add('daisy-table', {
 
 // List
 blockManager.add('daisy-list', {
-    label: 'List',
-    category: 'Data Display',
-    content: `
-    <ul class="menu bg-base-200 w-56 rounded-box">
-      <li><a>Item 1</a></li>
-      <li><a>Item 2</a></li>
-      <li><a>Item 3</a></li>
+  label: 'List',
+  category: 'Data Display',
+  content: `
+    <ul class="menu bg-base-200 w-56 rounded-box py-4">
+      <li><a href="#">Item 1</a></li>
+      <li><a href="#">Item 2</a></li>
+      <li><a href="#">Item 3</a></li>
     </ul>`,
 });
 
@@ -368,16 +368,16 @@ blockManager.add('daisy-list', {
 
 // Input
 blockManager.add('daisy-input', {
-    label: 'Text Input',
-    category: 'Forms',
-    content: '<input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />',
+  label: 'Text Input',
+  category: 'Forms',
+  content: '<input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />',
 });
 
 // Input with Label
 blockManager.add('daisy-input-group', {
-    label: 'Input with Label',
-    category: 'Forms',
-    content: `
+  label: 'Input with Label',
+  category: 'Forms',
+  content: `
     <label class="form-control w-full max-w-xs">
       <div class="label">
         <span class="label-text">What is your name?</span>
@@ -388,17 +388,17 @@ blockManager.add('daisy-input-group', {
 
 // Textarea
 blockManager.add('daisy-textarea', {
-    label: 'Textarea',
-    category: 'Forms',
-    content: '<textarea class="textarea textarea-bordered" placeholder="Bio"></textarea>',
+  label: 'Textarea',
+  category: 'Forms',
+  content: '<textarea class="textarea textarea-bordered" placeholder="Bio"></textarea>',
 });
 
 // Select
 blockManager.add('daisy-select', {
-    label: 'Select',
-    category: 'Forms',
-    content: `
-    <select class="select select-bordered w-full max-w-xs">
+  label: 'Select',
+  category: 'Forms',
+  content: `
+    <select class="select select-bordered w-full max-w-xs py-4">
       <option disabled selected>Who shot first?</option>
       <option>Han Solo</option>
       <option>Greedo</option>
@@ -407,44 +407,44 @@ blockManager.add('daisy-select', {
 
 // Checkbox
 blockManager.add('daisy-checkbox', {
-    label: 'Checkbox',
-    category: 'Forms',
-    content: '<input type="checkbox" class="checkbox" />',
+  label: 'Checkbox',
+  category: 'Forms',
+  content: '<input type="checkbox" class="checkbox" />',
 });
 
 // Radio
 blockManager.add('daisy-radio', {
-    label: 'Radio',
-    category: 'Forms',
-    content: '<input type="radio" name="radio-1" class="radio" checked />',
+  label: 'Radio',
+  category: 'Forms',
+  content: '<input type="radio" name="radio-1" class="radio" checked />',
 });
 
 // Toggle
 blockManager.add('daisy-toggle', {
-    label: 'Toggle',
-    category: 'Forms',
-    content: '<input type="checkbox" class="toggle" checked />',
+  label: 'Toggle',
+  category: 'Forms',
+  content: '<input type="checkbox" class="toggle" checked />',
 });
 
 // Range
 blockManager.add('daisy-range', {
-    label: 'Range',
-    category: 'Forms',
-    content: '<input type="range" min="0" max="100" value="40" class="range" />',
+  label: 'Range',
+  category: 'Forms',
+  content: '<input type="range" min="0" max="100" value="40" class="range" />',
 });
 
 // File Input
 blockManager.add('daisy-file-input', {
-    label: 'File Input',
-    category: 'Forms',
-    content: '<input type="file" class="file-input file-input-bordered w-full max-w-xs" />',
+  label: 'File Input',
+  category: 'Forms',
+  content: '<input type="file" class="file-input file-input-bordered w-full max-w-xs" />',
 });
 
 // Search Input
 blockManager.add('daisy-search', {
-    label: 'Search Input',
-    category: 'Forms',
-    content: `
+  label: 'Search Input',
+  category: 'Forms',
+  content: `
     <label class="input input-bordered flex items-center gap-2">
       <input type="text" class="grow" placeholder="Search" />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
@@ -457,22 +457,22 @@ blockManager.add('daisy-search', {
 
 // Navbar
 blockManager.add('daisy-navbar', {
-    label: 'Navbar',
-    category: 'Navigation',
-    content: `
-    <div class="navbar bg-base-100">
+  label: 'Navbar',
+  category: 'Navigation',
+  content: `
+    <div class="navbar bg-base-100 py-4">
       <div class="flex-1">
-        <a class="btn btn-ghost text-xl">daisyUI</a>
+        <a href="#" class="btn btn-ghost text-xl">daisyUI</a>
       </div>
       <div class="flex-none">
         <ul class="menu menu-horizontal px-1">
-          <li><a>Link</a></li>
+          <li><a href="#">Link</a></li>
           <li>
             <details>
               <summary>Parent</summary>
               <ul class="p-2 bg-base-100 rounded-t-none">
-                <li><a>Link 1</a></li>
-                <li><a>Link 2</a></li>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
               </ul>
             </details>
           </li>
@@ -483,13 +483,13 @@ blockManager.add('daisy-navbar', {
 
 // Breadcrumbs
 blockManager.add('daisy-breadcrumbs', {
-    label: 'Breadcrumbs',
-    category: 'Navigation',
-    content: `
-    <div class="breadcrumbs text-sm">
+  label: 'Breadcrumbs',
+  category: 'Navigation',
+  content: `
+    <div class="breadcrumbs text-sm py-4">
       <ul>
-        <li><a>Home</a></li>
-        <li><a>Documents</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Documents</a></li>
         <li>Add Document</li>
       </ul>
     </div>`,
@@ -497,23 +497,23 @@ blockManager.add('daisy-breadcrumbs', {
 
 // Pagination
 blockManager.add('daisy-pagination', {
-    label: 'Pagination',
-    category: 'Navigation',
-    content: `
-    <div class="join">
-      <button class="join-item btn">1</button>
-      <button class="join-item btn btn-active">2</button>
-      <button class="join-item btn">3</button>
-      <button class="join-item btn">4</button>
+  label: 'Pagination',
+  category: 'Navigation',
+  content: `
+    <div class="join py-4">
+      <a href="#" class="join-item btn">1</a>
+      <a href="#" class="join-item btn btn-active">2</a>
+      <a href="#" class="join-item btn">3</a>
+      <a href="#" class="join-item btn">4</a>
     </div>`,
 });
 
 // Steps
 blockManager.add('daisy-steps', {
-    label: 'Steps',
-    category: 'Navigation',
-    content: `
-    <ul class="steps">
+  label: 'Steps',
+  category: 'Navigation',
+  content: `
+    <ul class="steps py-4">
       <li class="step step-primary">Register</li>
       <li class="step step-primary">Choose plan</li>
       <li class="step">Purchase</li>
@@ -523,13 +523,13 @@ blockManager.add('daisy-steps', {
 
 // Tabs
 blockManager.add('daisy-tabs', {
-    label: 'Tabs',
-    category: 'Navigation',
-    content: `
-    <div role="tablist" class="tabs tabs-lifted">
-      <a role="tab" class="tab tab-active">Tab 1</a>
-      <a role="tab" class="tab">Tab 2</a>
-      <a role="tab" class="tab">Tab 3</a>
+  label: 'Tabs',
+  category: 'Navigation',
+  content: `
+    <div role="tablist" class="tabs tabs-lifted py-4">
+      <a href="#" role="tab" class="tab tab-active">Tab 1</a>
+      <a href="#" role="tab" class="tab">Tab 2</a>
+      <a href="#" role="tab" class="tab">Tab 3</a>
     </div>`,
 });
 
@@ -539,9 +539,9 @@ blockManager.add('daisy-tabs', {
 
 // Modal
 blockManager.add('daisy-modal', {
-    label: 'Modal',
-    category: 'Overlays',
-    content: `
+  label: 'Modal',
+  category: 'Overlays',
+  content: `
     <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
     <dialog id="my_modal_1" class="modal">
       <div class="modal-box">
@@ -558,10 +558,10 @@ blockManager.add('daisy-modal', {
 
 // Drawer
 blockManager.add('daisy-drawer', {
-    label: 'Drawer',
-    category: 'Overlays',
-    content: `
-    <div class="drawer">
+  label: 'Drawer',
+  category: 'Overlays',
+  content: `
+    <div class="drawer py-4">
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content">
         <label for="my-drawer" class="btn btn-primary drawer-button">Open drawer</label>
@@ -569,8 +569,8 @@ blockManager.add('daisy-drawer', {
       <div class="drawer-side">
         <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
         <ul class="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-          <li><a>Sidebar Item 1</a></li>
-          <li><a>Sidebar Item 2</a></li>
+          <li><a href="#">Sidebar Item 1</a></li>
+          <li><a href="#">Sidebar Item 2</a></li>
         </ul>
       </div>
     </div>`,
@@ -578,31 +578,31 @@ blockManager.add('daisy-drawer', {
 
 // Dropdown
 blockManager.add('daisy-dropdown', {
-    label: 'Dropdown',
-    category: 'Overlays',
-    content: `
-    <div class="dropdown">
+  label: 'Dropdown',
+  category: 'Overlays',
+  content: `
+    <div class="dropdown py-4">
       <div tabindex="0" role="button" class="btn m-1">Click</div>
       <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>Item 1</a></li>
-        <li><a>Item 2</a></li>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
       </ul>
     </div>`,
 });
 
 // Tooltip
 blockManager.add('daisy-tooltip', {
-    label: 'Tooltip',
-    category: 'Overlays',
-    content: `<div class="tooltip" data-tip="hello"><button class="btn">Hover me</button></div>`,
+  label: 'Tooltip',
+  category: 'Overlays',
+  content: `<div class="tooltip py-4" data-tip="hello"><a href="#" class="btn">Hover me</a></div>`,
 });
 
 // Toast
 blockManager.add('daisy-toast', {
-    label: 'Toast',
-    category: 'Overlays',
-    content: `
-    <div class="toast">
+  label: 'Toast',
+  category: 'Overlays',
+  content: `
+    <div class="toast py-4">
       <div class="alert alert-info">
         <span>New message arrived.</span>
       </div>
@@ -611,16 +611,16 @@ blockManager.add('daisy-toast', {
 
 // Loading Spinner
 blockManager.add('daisy-loading', {
-    label: 'Loading Spinner',
-    category: 'Overlays',
-    content: '<span class="loading loading-spinner loading-lg"></span>',
+  label: 'Loading Spinner',
+  category: 'Overlays',
+  content: '<span class="loading loading-spinner loading-lg"></span>',
 });
 
 // Swap
 blockManager.add('daisy-swap', {
-    label: 'Swap',
-    category: 'Overlays',
-    content: `
+  label: 'Swap',
+  category: 'Overlays',
+  content: `
     <label class="swap swap-rotate">
       <input type="checkbox" />
       <div class="swap-on">ON</div>
@@ -634,10 +634,10 @@ blockManager.add('daisy-swap', {
 
 // Accordion
 blockManager.add('daisy-accordion', {
-    label: 'Accordion',
-    category: 'Content',
-    content: `
-    <div class="collapse collapse-arrow bg-base-200">
+  label: 'Accordion',
+  category: 'Content',
+  content: `
+    <div class="collapse collapse-arrow bg-base-200 py-4">
       <input type="radio" name="my-accordion-2" checked="checked" />
       <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
       <div class="collapse-content">
@@ -655,10 +655,10 @@ blockManager.add('daisy-accordion', {
 
 // Collapse
 blockManager.add('daisy-collapse', {
-    label: 'Collapse',
-    category: 'Content',
-    content: `
-    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200">
+  label: 'Collapse',
+  category: 'Content',
+  content: `
+    <div tabindex="0" class="collapse collapse-plus border border-base-300 bg-base-200 py-4">
       <div class="collapse-title text-xl font-medium">Focus me to see content</div>
       <div class="collapse-content">
         <p>tabindex="0" attribute is necessary to make the div focusable</p>
@@ -668,10 +668,10 @@ blockManager.add('daisy-collapse', {
 
 // Carousel
 blockManager.add('daisy-carousel', {
-    label: 'Carousel',
-    category: 'Content',
-    content: `
-    <div class="carousel w-full">
+  label: 'Carousel',
+  category: 'Content',
+  content: `
+    <div class="carousel w-full py-4">
       <div id="slide1" class="carousel-item relative w-full">
         <img src="https://placehold.co/800x400" class="w-full" />
         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -691,10 +691,10 @@ blockManager.add('daisy-carousel', {
 
 // Timeline
 blockManager.add('daisy-timeline', {
-    label: 'Timeline',
-    category: 'Content',
-    content: `
-    <ul class="timeline">
+  label: 'Timeline',
+  category: 'Content',
+  content: `
+    <ul class="timeline py-4">
       <li>
         <div class="timeline-start">1984</div>
         <div class="timeline-middle">
@@ -717,10 +717,10 @@ blockManager.add('daisy-timeline', {
 
 // Chat Bubble
 blockManager.add('daisy-chat', {
-    label: 'Chat Bubble',
-    category: 'Content',
-    content: `
-    <div class="chat chat-start">
+  label: 'Chat Bubble',
+  category: 'Content',
+  content: `
+    <div class="chat chat-start py-4">
       <div class="chat-image avatar">
         <div class="w-10 rounded-full">
           <img alt="Tailwind CSS chat bubble component" src="https://placehold.co/50x50" />
@@ -744,10 +744,10 @@ blockManager.add('daisy-chat', {
 
 // Rating
 blockManager.add('daisy-rating', {
-    label: 'Rating',
-    category: 'Content',
-    content: `
-    <div class="rating">
+  label: 'Rating',
+  category: 'Content',
+  content: `
+    <div class="rating py-4">
       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
       <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -762,16 +762,16 @@ blockManager.add('daisy-rating', {
 
 // Card with Image Side
 blockManager.add('daisy-card-side', {
-    label: 'Card Horizontal',
-    category: 'DaisyUI Elements',
-    content: `
-    <div class="card card-side bg-base-100 shadow-xl">
+  label: 'Card Horizontal',
+  category: 'DaisyUI Elements',
+  content: `
+    <div class="card card-side bg-base-100 shadow-xl py-4">
       <figure><img src="https://placehold.co/200x280" alt="Movie"/></figure>
       <div class="card-body">
         <h2 class="card-title">New movie is released!</h2>
         <p>Click the button to watch on Jetflix app.</p>
         <div class="card-actions justify-end">
-          <button class="btn btn-primary">Watch</button>
+          <a href="#" class="btn btn-primary">Watch</a>
         </div>
       </div>
     </div>`,
@@ -779,16 +779,16 @@ blockManager.add('daisy-card-side', {
 
 // Glass Card
 blockManager.add('daisy-glass-card', {
-    label: 'Glass Card',
-    category: 'DaisyUI Elements',
-    content: `
-    <div class="card w-100 glass">
+  label: 'Glass Card',
+  category: 'DaisyUI Elements',
+  content: `
+    <div class="card w-100 glass py-4">
       <figure><img src="https://placehold.co/400x300" alt="car!"/></figure>
       <div class="card-body">
         <h2 class="card-title">Life hack</h2>
         <p>How to park your car at your garage?</p>
         <div class="card-actions justify-end">
-          <button class="btn btn-primary">Learn now!</button>
+          <a href="#" class="btn btn-primary">Learn now!</a>
         </div>
       </div>
     </div>`,
@@ -800,29 +800,29 @@ blockManager.add('daisy-glass-card', {
 
 // Footer
 blockManager.add('daisy-footer', {
-    label: 'Footer',
-    category: 'DaisyUI Layouts',
-    content: `
-    <footer class="footer p-10 bg-neutral text-neutral-content">
+  label: 'Footer',
+  category: 'DaisyUI Layouts',
+  content: `
+    <footer class="footer p-10 bg-neutral text-neutral-content py-4">
       <nav>
         <h6 class="footer-title">Services</h6>
-        <a class="link link-hover">Branding</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
+        <a href="#" class="link link-hover">Branding</a>
+        <a href="#" class="link link-hover">Design</a>
+        <a href="#" class="link link-hover">Marketing</a>
+        <a href="#" class="link link-hover">Advertisement</a>
       </nav>
       <nav>
         <h6 class="footer-title">Company</h6>
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
+        <a href="#" class="link link-hover">About us</a>
+        <a href="#" class="link link-hover">Contact</a>
+        <a href="#" class="link link-hover">Jobs</a>
+        <a href="#" class="link link-hover">Press kit</a>
       </nav>
       <nav>
         <h6 class="footer-title">Legal</h6>
-        <a class="link link-hover">Terms of use</a>
-        <a class="link link-hover">Privacy policy</a>
-        <a class="link link-hover">Cookie policy</a>
+        <a href="#" class="link link-hover">Terms of use</a>
+        <a href="#" class="link link-hover">Privacy policy</a>
+        <a href="#" class="link link-hover">Cookie policy</a>
       </nav>
     </footer>`,
 });

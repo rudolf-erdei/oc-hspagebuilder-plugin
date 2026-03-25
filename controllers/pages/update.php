@@ -13,7 +13,7 @@
             'https://cdn.tailwindcss.com',
         ],
         styles: [
-            'https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css'
+            'https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css'
         ]
     },
     storageManager: {
