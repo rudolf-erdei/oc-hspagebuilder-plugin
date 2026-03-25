@@ -1,0 +1,9 @@
+{
+    "name": "holisun/hspagebuilder-plugin",
+    "type": "october-plugin",
+    "description": "Builder Plugin for pages",
+    "require": {
+        "composer/installers": "~1.0",
+        "october/rain": ">=4.0"
+    }
+}
