@@ -1,0 +1,13 @@
+fields:
+    title:
+        label: Page Title
+        type: text
+        span: left
+        required: true
+    slug:
+        label: URL Slug
+        type: text
+        span: right
+        preset:
+            field: title
+            type: slug

@@ -1,0 +1,11 @@
+plugin:
+    name: 'holisun.hspagebuilder::lang.plugin.name'
+    description: 'holisun.hspagebuilder::lang.plugin.description'
+    author: Holisun
+    icon: oc-icon-wrench
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Page Builder'
+        url: holisun/hspagebuilder/pages
+        icon: icon-wrench

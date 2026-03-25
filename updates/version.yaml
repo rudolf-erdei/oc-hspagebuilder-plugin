@@ -1,0 +1,5 @@
+v1.0.1:
+    - 'Initialize plugin'
+v1.0.2:
+    - 'Created table holisun_hspagebuilder_pages'
+    - builder_table_create_holisun_hspagebuilder_pages.php
